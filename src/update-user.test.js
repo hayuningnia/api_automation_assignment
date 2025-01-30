@@ -13,13 +13,13 @@ async function setupUserAndGetToken() {
     "phone": "0987654321",
     "dob": "1970-01-01",
     "password": "Sup3r-secret!",
-    "email": "hayu@nia6.example"
+    "email": "hayu-update1@nia.example"
   }); 
   expect(registerResponse.status).toBe(201);
 
   // Login to get token
   const loginResponse = await axios.post('https://api.practicesoftwaretesting.com/users/login', {
-    "email": 'hayu@6.example',
+    "email": 'hayu-update1@nia.example',
     "password": 'Sup3r-secret!'
   });
   accessToken = loginResponse.data.access_token;
@@ -60,7 +60,7 @@ describe('Update User by ID', () => {
       "phone": "0987654321",
       "dob": "1970-01-01",
       "password": "Sup3r-secret!",
-      "email": "hayu@nia6.example"
+      "email": "hayu-update1@nia.example"
     },
     {
       headers: {
@@ -83,7 +83,7 @@ describe('Update User by ID', () => {
       "phone": "0987654321",
       "dob": "1970-01-01",
       "password": "Sup3r-secret!",
-      "email": "hayu@nia6.example"
+      "email": "hayu-update1@nia.example"
     },
     {
 			headers: {
@@ -107,7 +107,7 @@ describe('Update User by ID', () => {
 				"phone": "0987654321",
 				"dob": "1970-01-01",
 				"password": "Sup3r-secret!",
-				"email": "hayu@nia6.example"
+				"email": "hayu-update1@nia.example"
 			},
 			{
 				headers: {
