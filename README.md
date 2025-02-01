@@ -1,7 +1,7 @@
 
 # API Automation
 
-API Automation ini dibuat dengan javascript dan framework testing JEST. Di setiap test case sudah disediakan payload body, sehingga tidak perlu diubah manual saat akan dijalankan pertama kali. Namun saat akan dijalankan kedua kali dengan waktu berdekatan dengan menjalankan pertama kali atau ingin dijalankan manual masing masing test case setelah menjalankan pertama kali, payload email di setiap file test saat register perlu diubah karena email sudah ter register saat test pertama kali dijalankan.
+API Automation ini dibuat dengan Javascript dan framework testing JEST. Di setiap test case sudah disediakan payload body, sehingga tidak perlu diubah manual saat akan dijalankan pertama kali. Namun saat akan dijalankan kedua kali dalam waktu berdekatan dengan menjalankan proses pertama kali atau ingin dijalankan manual pada masing masing test case setelah menjalankan pertama kali, payload email di setiap file test saat register perlu diubah karena email sudah ter register saat test pertama kali dijalankan.
 
 ## Installation
 Jalankan command ini saat baru clone / download project untuk install dependencies
@@ -16,11 +16,6 @@ npm run test
 ```
 
 
-
-
-
-
-
 ## Features
 
 - Register Test Case
@@ -31,7 +26,6 @@ npm run test
 ## Test Case Reference
 
 #### Register User / register.test.js
-
 
 ```http
   POST https://api.practicesoftwaretesting.com/users/register
